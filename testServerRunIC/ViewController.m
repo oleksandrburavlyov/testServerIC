@@ -21,9 +21,17 @@
     self.label.text = @"test1";
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    NSString *currentLableText = self.label.text;
+    self.label.text = [self genLabelWithString:currentLableText];
 }
+
+- (NSString *)genLabelWithString:(NSString *)baseString {
+    NSString *newText = [NSString stringWithFormat:@"%@ %@", baseString, @"IC"];
+    return newText;
+}
+
 
 @end
