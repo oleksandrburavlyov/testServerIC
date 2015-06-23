@@ -27,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FF63876A1B3A0E4400FDEE2C /* ViewController+test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+test.h"; sourceTree = "<group>"; };
 		FFE200DC1B38AF9E0048C937 /* testServerRunIC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testServerRunIC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFE200E01B38AF9E0048C937 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFE200E11B38AF9E0048C937 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -106,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				FFE200FB1B38AF9E0048C937 /* testServerRunICTests.m */,
+				FF63876A1B3A0E4400FDEE2C /* ViewController+test.h */,
 				FFE200F91B38AF9E0048C937 /* Supporting Files */,
 			);
 			path = testServerRunICTests;
@@ -418,6 +420,7 @@
 				FFE201011B38AF9E0048C937 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FFE201021B38AF9E0048C937 /* Build configuration list for PBXNativeTarget "testServerRunICTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +429,7 @@
 				FFE201041B38AF9E0048C937 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

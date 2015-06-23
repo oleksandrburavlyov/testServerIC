@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "ViewController+test.h"
 
 @interface ViewController ()
+//@property (nonatomic) BOOL viewDidLoad;
 @property (nonatomic, weak) IBOutlet UILabel *label;
 @end
 
@@ -19,6 +21,8 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     self.label.text = @"test1";
+    
+//    self.viewDidLoad = YES;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -33,5 +37,13 @@
     return newText;
 }
 
+#pragma mark - Test
+- (NSString *)testLabelText {
+    return self.label.text;
+}
+
+//- (BOOL)viewDidLoadForTests {
+//    return self.viewDidLoad;
+//}
 
 @end
