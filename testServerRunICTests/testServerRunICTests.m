@@ -70,10 +70,12 @@
         for (int i=0; i<30000; i++) {
             int a =0;
             a += i;
+            a += a;
             
             NSString *addString = @"some text";
             NSString *resultString = [vc genLabelWithString:addString];
             addString = resultString;
+            resultString = addString;
         }
     }];
 }
