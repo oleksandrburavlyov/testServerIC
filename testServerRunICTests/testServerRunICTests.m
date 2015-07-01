@@ -37,15 +37,9 @@
 }
 
 - (void)testTextLabel {
-//    BOOL viewDidLoad = NO;
-//    while (!viewDidLoad) {
-//        viewDidLoad = vc.viewDidLoadForTests;
-//    }
-    
-    
     NSString *resultString = vc.testLabelText;
-    NSString *expectedString = @"test1";
     
+    NSString *expectedString = @"test1";
     XCTAssert([resultString isEqualToString:expectedString], @"got %@ instead of %@", resultString, expectedString);
 }
 
@@ -54,7 +48,6 @@
     NSString *resultString = [vc genLabelWithString:addString];
     
     NSString *expectedString = @"some text IC";
-    
     XCTAssert([resultString isEqualToString:expectedString], @"got %@ instead of %@", resultString, expectedString);
 }
 
@@ -74,9 +67,9 @@
             
             NSString *addString = @"some text";
             NSString *resultString = [vc genLabelWithString:addString];
-            addString = resultString;
-            resultString = addString;
-            addString = resultString;
+            
+            NSString *expectedString = @"some text IC";
+            XCTAssert([resultString isEqualToString:expectedString], @"got %@ instead of %@", resultString, expectedString);
         }
     }];
 }
