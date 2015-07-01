@@ -76,6 +76,7 @@
             NSString *resultString = [vc genLabelWithString:addString];
             addString = resultString;
             resultString = addString;
+            addString = resultString;
         }
     }];
 }
