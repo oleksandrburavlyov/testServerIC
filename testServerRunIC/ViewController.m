@@ -10,7 +10,7 @@
 #import "ViewController+test.h"
 
 @interface ViewController ()
-//@property (nonatomic) BOOL viewDidLoad;
+@property (nonatomic) BOOL viewDidLoaded;
 @property (nonatomic, weak) IBOutlet UILabel *label;
 @end
 
@@ -22,7 +22,7 @@
     
     self.label.text = @"test1";
     
-//    self.viewDidLoad = YES;
+    self.viewDidLoaded = YES;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
